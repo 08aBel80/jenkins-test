@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite>
+<suite name="suite">
+    <test name="test suite">
+        <classes>
+            <class name="test" />
+        </classes>
+    </test>
+</suite>
