@@ -6,6 +6,7 @@
             <class name="test" />
             <class name="test2" />
             <class name="test3" />
+            <class name="test4" />
         </classes>
     </test>
 </suite>
