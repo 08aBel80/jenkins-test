@@ -1,15 +1,12 @@
-import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.logging.Logger;
 import org.testng.annotations.Test;
-import utils.settingsUtils;
 
 public class browserTest {
     @Test
     public void test(){
-//        String browserName = System.getenv("browser");
-        String url = System.getenv("searchEngine");
 
-//        settingsUtils.setBrowserName(browserName);
+        Logger.getInstance().info("Browser: "+ System.getenv("browser"));
+        Logger.getInstance().info("Browser: "+ System.getenv("search engine: "+System.getenv("searchEngine")));
 
-        AqualityServices.getBrowser().goTo(url);
     }
 }
