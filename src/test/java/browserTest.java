@@ -5,10 +5,10 @@ import utils.settingsUtils;
 public class browserTest {
     @Test
     public void test(){
-        String browserName = System.getenv("browser");
+//        String browserName = System.getenv("browser");
         String url = System.getenv("searchEngine");
 
-        settingsUtils.setBrowserName(browserName);
+//        settingsUtils.setBrowserName(browserName);
 
         AqualityServices.getBrowser().goTo(url);
     }
