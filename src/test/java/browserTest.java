@@ -6,7 +6,7 @@ public class browserTest {
     public void test(){
 
         Logger.getInstance().info("Browser: "+ System.getenv("browser"));
-        Logger.getInstance().info("search engine: "+System.getenv("searchEngine")));
+        Logger.getInstance().info("search engine: "+System.getenv("searchEngine"));
 
     }
 }
