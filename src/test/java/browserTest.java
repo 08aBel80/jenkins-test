@@ -8,22 +8,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class browserTest {
-    Browser browser;
-    ISettingsFile setConfigData = new JsonSettingsFile("settings.json");
-    @BeforeMethod
-    public void setUp(){
-
-        browser = AqualityServices.getBrowser();
-        browser.goTo(System.getenv("searchEngine"));
-    }
-
     @Test
     public void test(){
+        System.out.println("search engine: "+ System.getenv("searchEngine"));
         System.out.println("chosen browser: " + System.getenv("browser"));
-    }
-
-    @AfterMethod
-    public void tearDown(){
-
     }
 }
