@@ -12,11 +12,14 @@ public class browserTest {
     ISettingsFile setConfigData = new JsonSettingsFile("settings.json");
     @BeforeMethod
     public void setUp(){
+
+        browser = AqualityServices.getBrowser();
+        browser.goTo(System.getenv("searchEngine"));
     }
 
     @Test
     public void test(){
-        System.out.println(System.getenv("browser"));
+        System.out.println("chosen browser: " + System.getenv("browser"));
     }
 
     @AfterMethod
