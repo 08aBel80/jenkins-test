@@ -8,6 +8,8 @@
             <class name="test3" />
             <class name="test4" />
             <class name="test5" />
+            <class name="browserTest" />
+
         </classes>
     </test>
 </suite>
